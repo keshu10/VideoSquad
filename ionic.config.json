@@ -1,5 +1,7 @@
 {
   "name": "VideoSquad",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

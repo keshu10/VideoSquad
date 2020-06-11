@@ -1,17 +1,80 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content>
+  <ion-slides [options]="slideOpts">
+    <ion-slide>
+      <div class="video-box" id="profilePage">
+        <video loop="true" preload="auto" autoplay="autoplay"
+          webkit-playsinline="playsinline" class="videoPlayer">
+           <source src="assets/video/video1.mp4" type="video/mp4" />
+        </video>
+        <h3 class="title">@Pipariya <ion-icon name="checkmark"></ion-icon></h3>
+        <p class="description">Corona Upadte #Corona</p>
+        <div class="song">
+          <ion-icon name="musical-notes"></ion-icon>
+          <div class="scroll-text">
+            <p>Original sound - Pink</p>
+          </div>
+        </div>
+        <div class="button-box">
+          <div class="avatar-box">
+            <ion-avatar (click)="goToProfile()"><img src="assets/icon/pipariya.png"></ion-avatar>
+            <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="heart-sharp"></ion-icon>
+            <p>93.8K</p>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="chatbubble-ellipses-sharp"></ion-icon>
+            <p>892</p>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="arrow-redo-sharp"></ion-icon>
+            <p>689</p>
+          </div>
+          <div class="avatar-box-2">
+            <ion-avatar><img src="assets/imgs/indore.jpg"></ion-avatar>
+          </div>
+          <img src="assets/music-note.gif" class="gif-music">
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="video-box" id="profilePage">
+        <video loop="true" preload="auto" autoplay="autoplay"
+          webkit-playsinline="playsinline" class="videoPlayer">
+           <source src="assets/video/video2.mp4" type="video/mp4" />
+        </video>
+        <h3 class="title">@Indore <ion-icon name="checkmark"></ion-icon></h3>
+        <p class="description">Corona Upadte #Corona</p>
+        <div class="song">
+          <ion-icon name="musical-notes"></ion-icon>
+          <div class="scroll-text">
+            <p>Original sound - Police Horn</p>
+          </div>
+        </div>
+        <div class="button-box">
+          <div class="avatar-box">
+            <ion-avatar (click)="goToProfile()"><img src="assets/icon/indore.png"></ion-avatar>
+            <ion-badge><ion-icon name="add"></ion-icon></ion-badge>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="heart-sharp"></ion-icon>
+            <p>93.8K</p>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="chatbubble-ellipses-sharp"></ion-icon>
+            <p>892</p>
+          </div>
+          <div class="icon-box">
+            <ion-icon name="arrow-redo-sharp"></ion-icon>
+            <p>689</p>
+          </div>
+          <div class="avatar-box-2">
+            <ion-avatar><img src="assets/imgs/default_user.jpg"></ion-avatar>
+          </div>
+          <img src="assets/music-note.gif" class="gif-music">
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
